@@ -1,0 +1,200 @@
+* {
+  margin: 0; 
+  padding: 0;
+  outline: none; 
+  -webkit-box-sizing: border-box; 
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  border: none;
+  outline: none;
+  text-decoration: none !important;
+}
+
+h6 {
+  color: #E1D0D0;
+}
+
+#canvas {
+  position: fixed;
+  display: block;
+  overflow: none;
+  top: 0;
+  left: 0;
+  z-index: 2 !important;
+}
+
+/*#fr {
+  position: fixed !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 1 !important;
+}*/
+
+/* FLEX */
+.nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 88888 !important;
+    a {
+      z-index: 4 !important;
+      color: red;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+        &:hover {
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
+          color: #E1D0D0;
+          font-size: 180%;
+        }
+        &:hover img{
+          -webkit-transition: all 1.5s;
+          -o-transition: all 1.5s;
+          transition: all 1.5s;
+          -webkit-transform: rotateX(1080deg);
+                  transform: rotateX(1080deg);
+          -webkit-transition-timing-function: ease;
+               -o-transition-timing-function: ease;
+                  transition-timing-function: ease;
+        }
+    }
+}
+
+.item {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%; 
+  -webkit-transition: all 0.3s; 
+  -o-transition: all 0.3s; 
+  transition: all 0.3s;
+    &:hover {
+      -webkit-flex-basis: 50%;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+      background-color: rgba(238,238,238, .1);  
+      z-index: 3 !important;
+      border: none;
+    }
+}
+
+#galleryBand {
+  display: none; 
+  max-width: 50% !important; 
+  background-color: rgba(238,238,238,0);
+    .img-circle {
+      overflow: hidden;
+      max-width: 30% !important;
+      max-height: 260px !important;
+      vertical-align: middle;
+      padding: 5px;
+    }
+}
+
+#musicBand {
+  background: none !important;
+  display: none; 
+  min-width: 75% !important; 
+} 
+
+#contactsBand {
+  display: none; 
+  min-width: 35% !important; 
+  text-align: center;
+  background: none;
+  vertical-align: middle;
+  ul {
+    list-style-type: none;
+  }
+}
+
+.fancybox-button {
+  width: 54px !important;
+  height: 54px !important;
+}
+.fancybox-button--close {
+  width: 74px !important;
+  height: 74px !important;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  .nav {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .item {
+    width: 100%;
+    height: 25vh;
+      &:hover {
+        -webkit-box-flex: 30%;
+        -webkit-flex-grow: 30%;
+            -ms-flex-positive: 30%;
+                flex-grow: 30%;
+      }
+  }
+
+  #galleryBand {
+    min-width: 100%;
+  }
+
+  #logo {
+    width: 105px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    &:hover {
+      width: 140px;
+    }
+  }
+}
